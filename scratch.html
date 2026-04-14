@@ -8,8 +8,7 @@
 </head>
 <body>
 
-    <!-- NAVIGATION ANCHORS -->
-    <div id="top-nav">
+    <div id="top-nav" id="top">
         <a href="#top">Top</a>
         <a href="#prospects">Top Prospects</a>
         <a href="#spotlight">AJ Dybantsa</a>
@@ -19,13 +18,11 @@
         <a href="index.html">← Back to Resume</a>
     </div>
 
-    <!-- HERO SECTION -->
     <div id="hero">
         <h1>2026 NBA Draft</h1>
         <p>One of the most talented draft classes in recent memory. Who goes number one?</p>
     </div>
 
-    <!-- PROSPECTS SECTION -->
     <div id="prospects" class="section">
         <h2>Top Draft Prospects by Position</h2>
         <p>Here's a breakdown of the top 2026 prospects grouped by position, per ESPN's Big Board:</p>
@@ -55,7 +52,6 @@
         </ol>
     </div>
 
-    <!-- SPOTLIGHT SECTION -->
     <div id="spotlight" class="section">
         <h2>Spotlight: AJ Dybantsa</h2>
         <div id="player-card">
@@ -78,7 +74,6 @@
         </div>
     </div>
 
-    <!-- VIDEO SECTION -->
     <div id="video" class="section">
         <h2>2026 NBA Draft Preview</h2>
         <div id="video-wrapper">
@@ -94,7 +89,6 @@
         </div>
     </div>
 
-    <!-- TABLEAU SECTION -->
     <div id="data" class="section">
         <h2>NBA Draft Data</h2>
         <p>Explore the data behind the 2026 NBA Draft prospects:</p>
@@ -126,24 +120,4 @@
             if (divElement.offsetWidth > 800) {
                 vizElement.style.width = '700px';
                 vizElement.style.height = '727px';
-            } else if (divElement.offsetWidth > 500) {
-                vizElement.style.width = '700px';
-                vizElement.style.height = '727px';
-            } else {
-                vizElement.style.width = '100%';
-                vizElement.style.height = '627px';
-            }
-            var scriptElement = document.createElement('script');
-            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-            vizElement.parentNode.insertBefore(scriptElement, vizElement);
-        </script>
-    </div>
-
-    <!-- FOOTER -->
-    <div id="footer">
-        <a href="#top">↑ Back to Top</a>
-        <a href="index.html">← Back to Resume</a>
-    </div>
-
-</body>
-</html>
+            } else if (divElement.offsetWidth > 500
